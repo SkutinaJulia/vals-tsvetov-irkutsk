@@ -211,3 +211,6 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
   .s-hero__widget { position: static; display: flex; flex-direction: column; }
   .s-hero__widget > .s-widget { flex: 1 1 auto; }
 }
+
+/* правка Юли: без переносов слов в текстах */
+h1, h2, h3, p, li, a, span, b, figcaption, blockquote { -webkit-hyphens: manual !important; hyphens: manual !important; }
