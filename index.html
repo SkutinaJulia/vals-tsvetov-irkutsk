@@ -40,21 +40,28 @@
     </div>
     <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-calc data-base="0" data-min="0" data-min-note="минимальный заказ" data-per="{&quot;flower&quot;:&quot;stems&quot;}" data-message="Здравствуйте! Хочу заказать букет: {выбор}. Предварительно {итого} без упаковки. Подскажите, когда сможете доставить?" onsubmit="return false">
       <h2 class="s-widget__title">Собрать букет</h2>
-      <fieldset><legend>Цветы</legend><div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="flower" value="0" data-label="Роза 60–70 см" data-price="320" checked><span>Роза 60–70 см</span><b>320 ₽<small>/стебель</small></b></label><label class="s-chip s-chip--row"><input type="radio" name="flower" value="1" data-label="Роза Пинк Флойд" data-price="300"><span>Роза Пинк Флойд</span><b>300 ₽<small>/стебель</small></b></label><label class="s-chip s-chip--row"><input type="radio" name="flower" value="2" data-label="Кустовая роза" data-price="390"><span>Кустовая роза</span><b>390 ₽<small>/стебель</small></b></label><label class="s-chip s-chip--row"><input type="radio" name="flower" value="3" data-label="Кустовая хризантема" data-price="320"><span>Кустовая хризантема</span><b>320 ₽<small>/стебель</small></b></label></div></fieldset>
+      <fieldset><legend>Цветы</legend><div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="flower" value="0" data-label="Роза I Свердловский" data-price="320" checked><span>Роза I Свердловский</span><b>320 ₽<small>/стебель</small></b></label><label class="s-chip s-chip--row"><input type="radio" name="flower" value="1" data-label="Роза Пинк Флойд I Свердловский" data-price="300"><span>Роза Пинк Флойд I Свердловский</span><b>300 ₽<small>/стебель</small></b></label><label class="s-chip s-chip--row"><input type="radio" name="flower" value="2" data-label="Кустовая роза I Свердловский" data-price="390"><span>Кустовая роза I Свердловский</span><b>390 ₽<small>/стебель</small></b></label><label class="s-chip s-chip--row"><input type="radio" name="flower" value="3" data-label="Кустовая хризантема" data-price="320"><span>Кустовая хризантема</span><b>320 ₽<small>/стебель</small></b></label></div></fieldset>
       <div class="s-range"><label for="f-stems"><span>Сколько стеблей</span><b><output data-s-out="stems">11</output></b></label>
       <input id="f-stems" type="range" name="stems" min="3" max="51" step="2" value="11" data-price="0" data-label="стеблей" data-unit="" data-say="стеблей в букете – {v}"></div>
       <p class="s-total"><span>Предварительно</span><b data-s-total>–</b></p>
+      <figure class="s-pick" hidden><img src="" alt=""><figcaption></figcaption></figure>
       <div class="s-bubble" aria-live="polite"><span class="s-bubble__label">Ваше сообщение</span><p data-s-bubble></p></div>
       <div class="s-send">
         <a class="s-btn s-btn--wide" data-s-msg="telegram" href="#">Отправить заказ в Telegram</a>
       </div>
-      <p class="s-send__note" data-s-copied hidden>Текст скопирован – вставьте его в чат.</p>
+      <p class="s-send__hint">Текст заказа скопируется сам. В чате Telegram нажмите «Вставить» и отправьте.</p>
+      <p class="s-send__note" data-s-copied hidden>Готово: текст заказа скопирован. Откройте чат, нажмите «Вставить» и отправьте.</p>
       
     </form></div>
     <figure class="s-hero__bg" aria-hidden="true"><img class="" src="assets/hero.webp" alt="Флорист собирает букет" decoding="async" fetchpriority="high"></figure>
   </section>
 
   
+
+  <section class="s-section s-reveal" id="katalog">
+    <header class="s-section__head"><h2>Букеты с ценами</h2><p>Нажмите на букет – он появится в форме заказа.</p></header>
+    <div class="s-cat"><figure data-kat="Корзина &quot;Комплимент&quot;" tabindex="0" role="button"><img src="assets/kat-01.webp" alt="Корзина &quot;Комплимент&quot;" loading="lazy" decoding="async"><figcaption><span>Корзина &quot;Комплимент&quot;</span><b>6 030 ₽</b></figcaption></figure><figure data-kat="Корзина &quot;Малиновый закат&quot;" tabindex="0" role="button"><img src="assets/kat-02.webp" alt="Корзина &quot;Малиновый закат&quot;" loading="lazy" decoding="async"><figcaption><span>Корзина &quot;Малиновый закат&quot;</span><b>4 730 ₽</b></figcaption></figure><figure data-kat="Корзина &quot;Нежное утро&quot;" tabindex="0" role="button"><img src="assets/kat-03.webp" alt="Корзина &quot;Нежное утро&quot;" loading="lazy" decoding="async"><figcaption><span>Корзина &quot;Нежное утро&quot;</span><b>3 730 ₽</b></figcaption></figure><figure data-kat="Корзина &quot;Поэма&quot;" tabindex="0" role="button"><img src="assets/kat-04.webp" alt="Корзина &quot;Поэма&quot;" loading="lazy" decoding="async"><figcaption><span>Корзина &quot;Поэма&quot;</span><b>5 110 ₽</b></figcaption></figure><figure data-kat="Корзина &quot;Презент&quot;" tabindex="0" role="button"><img src="assets/kat-05.webp" alt="Корзина &quot;Презент&quot;" loading="lazy" decoding="async"><figcaption><span>Корзина &quot;Презент&quot;</span><b>7 730 ₽</b></figcaption></figure><figure data-kat="Корзина &quot;Райский остров&quot;" tabindex="0" role="button"><img src="assets/kat-06.webp" alt="Корзина &quot;Райский остров&quot;" loading="lazy" decoding="async"><figcaption><span>Корзина &quot;Райский остров&quot;</span><b>7 520 ₽</b></figcaption></figure><figure data-kat="Корзина &quot;Розовый сад&quot;" tabindex="0" role="button"><img src="assets/kat-07.webp" alt="Корзина &quot;Розовый сад&quot;" loading="lazy" decoding="async"><figcaption><span>Корзина &quot;Розовый сад&quot;</span><b>3 450 ₽</b></figcaption></figure></div>
+  </section>
 
   <section class="s-section s-reveal" id="prices">
     <header class="s-section__head"><h2>Цены</h2><p>Цены с карточки на Яндекс.Картах. Точный состав и сумму подтвердим в сообщении.</p></header>
@@ -142,5 +149,30 @@
 <footer class="s-foot"><p>Вальс цветов · Иркутск</p><p>Цветы с доставкой по Иркутску</p></footer>
 <nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Заказать букет</a><a class="s-btn s-btn--ghost" href="tel:+79087780373">Позвонить</a></nav>
 <script src="style.js" defer></script>
+<script>
+// правка Юли: выбор букета в форме или клик по карточке каталога меняет главное фото
+(function () {
+  var M = {"корзина \"комплимент\"":"assets/kat-01.webp","корзина \"малиновый закат\"":"assets/kat-02.webp","корзина \"нежное утро\"":"assets/kat-03.webp","корзина \"поэма\"":"assets/kat-04.webp","корзина \"презент\"":"assets/kat-05.webp","корзина \"райский остров\"":"assets/kat-06.webp","корзина \"розовый сад\"":"assets/kat-07.webp"}, N = {"корзина \"комплимент\"":"Корзина \"Комплимент\"","корзина \"малиновый закат\"":"Корзина \"Малиновый закат\"","корзина \"нежное утро\"":"Корзина \"Нежное утро\"","корзина \"поэма\"":"Корзина \"Поэма\"","корзина \"презент\"":"Корзина \"Презент\"","корзина \"райский остров\"":"Корзина \"Райский остров\"","корзина \"розовый сад\"":"Корзина \"Розовый сад\""}, imgs = document.querySelectorAll(".s-hero__photo img, .s-hero__bg img");
+  var key = function (el) { return ((el && (el.dataset.name || el.dataset.label || el.dataset.kat)) || "").toLowerCase(); };
+  var pv = document.querySelector(".s-pick"), pvImg = pv && pv.querySelector("img"), pvCap = pv && pv.querySelector("figcaption");
+  var show = function (n) {
+    var src = M[n]; if (pv) pv.hidden = !src; if (!src) return;
+    imgs.forEach(function (i) { i.removeAttribute("srcset"); i.src = src; });
+    if (pvImg) { pvImg.src = src; pvCap.textContent = N[n] || ""; }
+  };
+  document.addEventListener("change", function (e) { if (e.target.matches("input[type=radio]")) show(key(e.target)); });
+  document.querySelectorAll("[data-kat]").forEach(function (f) {
+    var pick = function () {
+      var n = key(f), r = Array.prototype.find.call(document.querySelectorAll(".s-widget input[type=radio]"), function (x) { return key(x) === n; });
+      if (r) { r.checked = true; r.dispatchEvent(new Event("change", { bubbles: true })); }
+      show(n); var w = document.getElementById("widget"); if (w) w.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    f.addEventListener("click", pick); f.addEventListener("keydown", function (e) { if (e.key === "Enter") pick(); });
+  });
+  // при загрузке главное фото не трогаем: в форме показываем превью уже выбранного букета
+  var first = document.querySelector(".s-widget input[type=radio]:checked"), n0 = key(first);
+  if (pv && M[n0]) { pv.hidden = false; pvImg.src = M[n0]; pvCap.textContent = N[n0] || ""; }
+})();
+</script>
 </body>
 </html>

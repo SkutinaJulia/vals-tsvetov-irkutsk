@@ -214,3 +214,22 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 
 /* правка Юли: без переносов слов в текстах */
 h1, h2, h3, p, li, a, span, b, figcaption, blockquote { -webkit-hyphens: manual !important; hyphens: manual !important; }
+
+/* правка Юли: каталог «Букеты с ценами» */
+.s-cat { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 18px; }
+.s-cat figure { margin: 0; background: var(--c-surface); border: 1px solid var(--hair); border-radius: var(--r); overflow: hidden; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+.s-cat figure:hover, .s-cat figure:focus-visible { transform: translateY(-3px); box-shadow: 0 10px 24px rgb(0 0 0 / .12); }
+.s-cat img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+.s-cat figcaption { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 12px 14px; font-weight: 600; font-size: .92rem; }
+.s-cat figcaption b { white-space: nowrap; color: var(--c-accent-deep, var(--c-accent)); }
+.s-hero__photo img, .s-hero__bg img { transition: opacity .25s ease; }
+.s-pick { display: flex; align-items: center; gap: 12px; margin: 4px 0 12px; padding: 8px; border-radius: 12px; background: var(--tint, var(--c-surface)); }
+.s-pick[hidden] { display: none; }
+.s-pick img { width: 64px; height: 80px; object-fit: cover; border-radius: 8px; flex: none; }
+.s-pick figcaption { font-weight: 600; font-size: .9rem; }
+@media (min-width: 861px) { .s-pick { display: none !important; } }
+@media (max-width: 600px) { .s-cat { grid-template-columns: 1fr 1fr; gap: 12px; } .s-cat figcaption { flex-direction: column; gap: 4px; padding: 10px 12px; } }
+
+/* правка Юли: подсказка, что текст копируется (MAX, Telegram, ВК не принимают готовый текст по ссылке) */
+.s-send__hint { margin: 10px 2px 0; font-size: .82rem; line-height: 1.4; color: var(--c-ink-soft); }
+.s-send__note:not([hidden]) { display: block; margin-top: 8px; padding: 10px 12px; border-radius: 10px; background: var(--tint, var(--c-surface)); font-weight: 600; }
